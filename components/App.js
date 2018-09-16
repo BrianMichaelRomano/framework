@@ -13,10 +13,10 @@ export default class App {
       about: new About()
     };
     this.router = new Router(this.rootView, this.components, this.selector);
-    this.init();
+    this.inject();
   }
 
-  init() {
+  inject() {
     this.components.home.inject(this.router);
     this.components.contact.inject(this.router);
     this.components.about.inject(this.router);
