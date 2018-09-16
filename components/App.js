@@ -6,8 +6,8 @@ import Nav from './Nav.js';
 import Footer from './Footer.js';
 
 export default class App {
-  constructor(rootView, selector, views) {
-    this.selector = selector;
+  constructor(rootView, dynamicView, views) {
+    this.dynamicView = dynamicView;
     this.rootView = rootView;
     this.views = views;
     this.components = {
@@ -20,7 +20,7 @@ export default class App {
     this.router = new Router(
       this.rootView,
       this.components,
-      this.selector,
+      this.dynamicView,
       this.views
     );
     this.inject();

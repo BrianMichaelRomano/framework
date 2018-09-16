@@ -1,8 +1,8 @@
 export default class Router {
-  constructor(rootRoute, components, selector, views) {
+  constructor(rootRoute, components, dynamicView, views) {
     this.rootRoute = rootRoute;
     this.components = components;
-    this.selector = selector;
+    this.dynamicView = dynamicView;
     this.views = views;
     console.log(this.views);
     document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +18,7 @@ export default class Router {
 
     if (this.components[currentRoute]) {
       this.views.forEach(view => {
-        if (view === this.selector) {
+        if (view === this.dynamicView) {
           document.querySelector(view).innerHTML = this.components[
             currentRoute
           ].render();
@@ -30,7 +30,9 @@ export default class Router {
         }
       });
     } else {
-      document.querySelector(this.selector).innerHTML = `<h1>Page not found!`;
+      document.querySelector(
+        this.dynamicView
+      ).innerHTML = `<h1>Page not found!`;
     }
   }
 }
