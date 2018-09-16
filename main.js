@@ -1,3 +1,3 @@
 import App from './components/App.js';
-
-const app = new App('home', '#app');
+const views = ['#nav', '#app', '#footer'];
+const app = new App('home', '#app', views);
