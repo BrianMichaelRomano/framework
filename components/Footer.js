@@ -2,7 +2,6 @@ import Proxy from '../utils/Proxify.js';
 
 export default class Footer {
   constructor() {
-    this.state = Proxy({});
     this.listener();
   }
 
@@ -12,9 +11,7 @@ export default class Footer {
 
   onClick(e) {}
 
-  inject(router) {
-    this.state.router = router;
-  }
+  inject() {}
 
   render() {
     return `
