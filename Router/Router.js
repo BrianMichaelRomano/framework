@@ -4,7 +4,7 @@ export default class Router {
     this.components = components;
     this.dynamicView = dynamicView;
     this.views = views;
-    console.log(this.views);
+
     document.addEventListener('DOMContentLoaded', () => {
       location.hash = rootRoute;
       this.route();
