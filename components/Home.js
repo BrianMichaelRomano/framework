@@ -9,10 +9,10 @@ export default class Home {
   }
 
   listener() {
-    document.addEventListener('click', this.onClickHome.bind(this));
+    document.addEventListener('click', this.onClick.bind(this));
   }
 
-  onClickHome(e) {
+  onClick(e) {
     if (e.target.id === 'changeNameBtn') {
       this.state.firstName = 'Bob';
     }
