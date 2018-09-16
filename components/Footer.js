@@ -1,5 +1,3 @@
-import Proxy from '../utils/Proxify.js';
-
 export default class Footer {
   constructor() {
     this.listener();
