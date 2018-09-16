@@ -24,7 +24,9 @@ export default class Home {
 
   render() {
     return `
-      <h1>${this.state.title}</h1>
+      <div class="container">
+        <h1>${this.state.title}</h1>
+      </div>
     `;
   }
 }

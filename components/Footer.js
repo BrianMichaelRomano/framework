@@ -18,7 +18,9 @@ export default class Footer {
 
   render() {
     return `
+    <div class="container">
       <h6>Footer</h6>
+    </div>
     `;
   }
 }

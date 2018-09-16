@@ -20,7 +20,9 @@ export default class Contact {
 
   render() {
     return `
-      <h1>${this.state.title}
+      <div class="container">
+        <h1>${this.state.title}
+      </div>
     `;
   }
 }

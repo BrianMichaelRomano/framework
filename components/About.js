@@ -25,9 +25,11 @@ export default class About {
 
   render() {
     return `
+    <div class="container">
       <h1>About</h1>
       <h3>${this.state.firstName} ${this.state.lastName}</h3>
       <button id="changeNameBtn">Change Name</button>
+    </div>
     `;
   }
 }
